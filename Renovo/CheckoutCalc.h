@@ -15,7 +15,7 @@ public:
 
 private:
 
-	QMap<QString, int> m_SKUs;
+	QMap<QString, int> m_SKUCounts;
 	QSqlDatabase m_db;
 };
 #endif // CHECKOUTCALC_H

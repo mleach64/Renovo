@@ -56,5 +56,5 @@ void Renovo::TotalButtonPressed()
 
 void Renovo::ClearButtonPressed()
 {
-
+	ui.PriceOutput_Edit->clear();
 }
