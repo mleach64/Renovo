@@ -50,6 +50,9 @@
     <ClCompile Include="GeneratedFiles\qrc_Renovo.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="CheckoutCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Renovo.h">
@@ -65,6 +68,9 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_Renovo.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckoutCalc.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

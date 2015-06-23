@@ -137,6 +137,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CheckoutCalc.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_Renovo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -199,6 +200,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheckoutCalc.h" />
     <ClInclude Include="GeneratedFiles\ui_Renovo.h" />
   </ItemGroup>
   <ItemGroup>

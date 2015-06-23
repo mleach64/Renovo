@@ -28,9 +28,9 @@ class Ui_CheckoutUI
 public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QLineEdit *lineEdit;
+    QLineEdit *SKU_LineEdit;
     QPushButton *Total_Button;
-    QTextEdit *textEdit;
+    QTextEdit *PriceOutput_Edit;
     QPushButton *Clear_Button;
 
     void setupUi(QDialog *CheckoutUI)
@@ -42,10 +42,10 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        lineEdit = new QLineEdit(CheckoutUI);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        SKU_LineEdit = new QLineEdit(CheckoutUI);
+        SKU_LineEdit->setObjectName(QStringLiteral("SKU_LineEdit"));
 
-        horizontalLayout->addWidget(lineEdit);
+        horizontalLayout->addWidget(SKU_LineEdit);
 
         Total_Button = new QPushButton(CheckoutUI);
         Total_Button->setObjectName(QStringLiteral("Total_Button"));
@@ -55,10 +55,10 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
-        textEdit = new QTextEdit(CheckoutUI);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
+        PriceOutput_Edit = new QTextEdit(CheckoutUI);
+        PriceOutput_Edit->setObjectName(QStringLiteral("PriceOutput_Edit"));
 
-        verticalLayout->addWidget(textEdit);
+        verticalLayout->addWidget(PriceOutput_Edit);
 
         Clear_Button = new QPushButton(CheckoutUI);
         Clear_Button->setObjectName(QStringLiteral("Clear_Button"));

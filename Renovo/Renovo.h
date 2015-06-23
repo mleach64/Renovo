@@ -48,6 +48,12 @@ private:
 
 private:
 	Ui::CheckoutUI ui;  //The main UI object
+
+private slots:
+
+	void TotalButtonPressed();
+
+	void ClearButtonPressed();
 };
 
 #endif // RENOVO_H
