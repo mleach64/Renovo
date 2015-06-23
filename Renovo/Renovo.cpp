@@ -1,4 +1,7 @@
 #include "Renovo.h"
+
+#include <QMessageBox>
+
 #include "CheckoutCalc.h"
 
 Renovo::Renovo(QWidget *parent)
@@ -30,14 +33,25 @@ void Renovo::ConnnectSignalsAndSlots()
 void Renovo::TotalButtonPressed()
 {
 	QString SKUString = ui.SKU_LineEdit->text();
-	ui.SKU_LineEdit->clear();
-
 	QStringList SKUList = SKUString.split(',');
 
-	CheckoutCalc priceCalc;
-	QVariant price = priceCalc.price(SKUList);
+	QVariant price = 0.0f;
+
+	try
+	{
+		CheckoutCalc priceCalc;
+		price = priceCalc.price(SKUList);
+	}
+	catch (int e)
+	{
+		QMessageBox::critical(0, "Cannot open database",
+			"Unable to establish a connection to the checkout database.\n"
+			"Checkout aborted.", QMessageBox::Ok);
+		return;
+	}
 
 	ui.PriceOutput_Edit->append(price.toString() + '\n');
+	ui.SKU_LineEdit->clear();
 }
 
 void Renovo::ClearButtonPressed()

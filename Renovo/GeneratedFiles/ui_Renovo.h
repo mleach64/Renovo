@@ -38,6 +38,8 @@ public:
         if (CheckoutUI->objectName().isEmpty())
             CheckoutUI->setObjectName(QStringLiteral("CheckoutUI"));
         CheckoutUI->resize(477, 316);
+        CheckoutUI->setContextMenuPolicy(Qt::NoContextMenu);
+        CheckoutUI->setSizeGripEnabled(true);
         verticalLayout = new QVBoxLayout(CheckoutUI);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
@@ -73,7 +75,7 @@ public:
 
     void retranslateUi(QDialog *CheckoutUI)
     {
-        CheckoutUI->setWindowTitle(QApplication::translate("CheckoutUI", "Dialog", 0));
+        CheckoutUI->setWindowTitle(QApplication::translate("CheckoutUI", "Renovo Checkout", 0));
         Total_Button->setText(QApplication::translate("CheckoutUI", "Total", 0));
         Clear_Button->setText(QApplication::translate("CheckoutUI", "Clear", 0));
     } // retranslateUi
