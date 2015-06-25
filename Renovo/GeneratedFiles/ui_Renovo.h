@@ -46,6 +46,7 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         SKU_LineEdit = new QLineEdit(CheckoutUI);
         SKU_LineEdit->setObjectName(QStringLiteral("SKU_LineEdit"));
+        SKU_LineEdit->setClearButtonEnabled(false);
 
         horizontalLayout->addWidget(SKU_LineEdit);
 
@@ -59,6 +60,7 @@ public:
 
         PriceOutput_Edit = new QTextEdit(CheckoutUI);
         PriceOutput_Edit->setObjectName(QStringLiteral("PriceOutput_Edit"));
+        PriceOutput_Edit->setReadOnly(true);
 
         verticalLayout->addWidget(PriceOutput_Edit);
 
@@ -76,6 +78,8 @@ public:
     void retranslateUi(QDialog *CheckoutUI)
     {
         CheckoutUI->setWindowTitle(QApplication::translate("CheckoutUI", "Renovo Checkout", 0));
+        SKU_LineEdit->setInputMask(QString());
+        SKU_LineEdit->setPlaceholderText(QApplication::translate("CheckoutUI", "Enter SKUs here", 0));
         Total_Button->setText(QApplication::translate("CheckoutUI", "Total", 0));
         Clear_Button->setText(QApplication::translate("CheckoutUI", "Clear", 0));
     } // retranslateUi

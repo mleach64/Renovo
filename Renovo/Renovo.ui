@@ -23,7 +23,17 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLineEdit" name="SKU_LineEdit"/>
+      <widget class="QLineEdit" name="SKU_LineEdit">
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter SKUs here</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QPushButton" name="Total_Button">
@@ -35,7 +45,11 @@
     </layout>
    </item>
    <item>
-    <widget class="QTextEdit" name="PriceOutput_Edit"/>
+    <widget class="QTextEdit" name="PriceOutput_Edit">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
    </item>
    <item>
     <widget class="QPushButton" name="Clear_Button">

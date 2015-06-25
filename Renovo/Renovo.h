@@ -51,8 +51,22 @@ private:
 
 private slots:
 
+	//************************************
+	// Method:    TotalButtonPressed
+	// FullName:  Renovo::TotalButtonPressed
+	// Access:    private 
+	// Returns:   void
+	// Desc:	  Handle when the Total button is pressed
+	//************************************
 	void TotalButtonPressed();
 
+	//************************************
+	// Method:    ClearButtonPressed
+	// FullName:  Renovo::ClearButtonPressed
+	// Access:    private 
+	// Returns:   void
+	// Desc:	  Handle when the Clear button is pressed
+	//************************************
 	void ClearButtonPressed();
 };
 

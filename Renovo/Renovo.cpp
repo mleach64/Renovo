@@ -1,8 +1,6 @@
 #include "Renovo.h"
-
-#include <QMessageBox>
-
 #include "CheckoutCalc.h"
+#include "AllCapRegExpValidator.h"
 
 Renovo::Renovo(QWidget *parent)
 	: QDialog(parent)
@@ -21,7 +19,8 @@ Renovo::~Renovo()
 
 void Renovo::InitailizeUI()
 {
-
+	QValidator *validator = new AllCapRegExpValidator(QRegExp("^[A-Z]+$"), this);
+	ui.SKU_LineEdit->setValidator(validator);
 }
 
 void Renovo::ConnnectSignalsAndSlots()
@@ -33,20 +32,18 @@ void Renovo::ConnnectSignalsAndSlots()
 void Renovo::TotalButtonPressed()
 {
 	QString SKUString = ui.SKU_LineEdit->text();
-	QStringList SKUList = SKUString.split(',');
+	QStringList SKUList = SKUString.split("");
 
 	QVariant price = 0.0f;
 
 	try
 	{
 		CheckoutCalc priceCalc;
-		price = priceCalc.price(SKUList);
+		price = priceCalc.Price(SKUList);
 	}
 	catch (int e)
 	{
-		QMessageBox::critical(0, "Cannot open database",
-			"Unable to establish a connection to the checkout database.\n"
-			"Checkout aborted.", QMessageBox::Ok);
+		//Database connection failed. BAIL!!!!
 		return;
 	}
 

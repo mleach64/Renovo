@@ -1,23 +1,22 @@
-﻿Build started 6/23/2015 4:04:32 PM.
+﻿Build started 6/25/2015 10:06:21 AM.
      1>Project "C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Renovo\Renovo.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Moc'ing Renovo.h...
-         Uic'ing Renovo.ui...
-         Rcc'ing Renovo.qrc...
-     1>RCC : warning : No resources in 'C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Renovo\Renovo.qrc'.
-         
+         Moc'ing AllCapRegExpValidator.h...
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013\include /I.\GeneratedFiles\Release /IC:\Qt\5.4\msvc2013\include\QtCore /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtSql /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtXml /IC:\Qt\5.4\msvc2013\include\QtXmlPatterns /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QT_WIDGETS_LIB /D QT_XML_LIB /D QT_XMLPATTERNS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CheckoutCalc.cpp GeneratedFiles\Release\moc_Renovo.cpp main.cpp Renovo.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013\include /I.\GeneratedFiles\Release /IC:\Qt\5.4\msvc2013\include\QtCore /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtSql /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtXml /IC:\Qt\5.4\msvc2013\include\QtXmlPatterns /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QT_WIDGETS_LIB /D QT_XML_LIB /D QT_XMLPATTERNS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AllCapRegExpValidator.cpp CheckoutCalc.cpp GeneratedFiles\Release\moc_AllCapRegExpValidator.cpp GeneratedFiles\Release\moc_Renovo.cpp main.cpp Renovo.cpp
+         AllCapRegExpValidator.cpp
          CheckoutCalc.cpp
+         moc_AllCapRegExpValidator.cpp
          moc_Renovo.cpp
          main.cpp
          Renovo.cpp
          Generating Code...
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013\include /I.\GeneratedFiles\Release /IC:\Qt\5.4\msvc2013\include\QtCore /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtSql /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtXml /IC:\Qt\5.4\msvc2013\include\QtXmlPatterns /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QT_WIDGETS_LIB /D QT_XML_LIB /D QT_XMLPATTERNS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_Renovo.cpp
-         qrc_Renovo.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\\Renovo.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Sql.lib Qt5Widgets.lib Qt5Xml.lib Qt5XmlPatterns.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\Renovo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\Renovo.lib" /MACHINE:X86 /SAFESEH Release\CheckoutCalc.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\\Renovo.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Sql.lib Qt5Widgets.lib Qt5Xml.lib Qt5XmlPatterns.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\Renovo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mleach\Documents\Visual Studio 2013\Projects\Renovo\Win32\Release\Renovo.lib" /MACHINE:X86 /SAFESEH Release\AllCapRegExpValidator.obj
+         Release\CheckoutCalc.obj
          Release\qrc_Renovo.obj
+         Release\moc_AllCapRegExpValidator.obj
          Release\moc_Renovo.obj
          Release\main.obj
          Release\Renovo.obj
@@ -26,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.82
+Time Elapsed 00:00:05.83
